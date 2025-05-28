@@ -41,17 +41,17 @@
 
     <div class="owner" role="region">
       <h3>Meet the owner</h3>
-      <ul>
-        <li>Name: John Doe</li>
-        <li>Title: CEO</li>
-        <li>Email: johnjoe@jambox.ca</li>
-        <li>Phone: 613-000-0000</li>
+      <ul itemscope itemtype="https://schema.org/Person">role="list">
+        <li itemprop="name">Name: John Doe</li>
+        <li itemprop="jobTitle">Title: CEO</li>
+        <li itemprop="email">Email: johnjoe@jambox.ca</li>
+        <li itemprop="telephone">Phone: 613-000-0000</li>
       </ul>
     </div>
 
     <div id="address-heading" role="region">
       <h3>Address</h3>
-      <div itemscope itemtype="https://schema.org/PostalAddress">
+      <div itemscope itemtype="https://schema.org/PostalAddress" role="list">
           <ul>
             <li itemprop="name">Jambox Studio</li>
             <li itemprop="streetAddress"123>Guitar Road,</li>
@@ -62,7 +62,7 @@
       </div>
     </div>
     <div id="contact-section">
-      <h1>Contact Us</h1>
+      <h3>Contact Us</h3>
       <form action="thanks.html" role="form">
         <div>
         <label>Full Name</label>
