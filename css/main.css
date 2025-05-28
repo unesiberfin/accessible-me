@@ -71,11 +71,16 @@ form button {
 .site-footer {
   padding: 2rem 0;
 }
-.skip-to-content-link {
-  left: 50%;
-  position: absolute;
-  transform: translateY(-100%);
+
+.skip-to-footer, .skip-to-content, .skip-to-contact{
   text-decoration: none;
+  border: 1px black solid;
+  padding: .5em;
+  color: rgb(0, 0, 0);
 }
 
-
+.skip-to-footer:hover, 
+.skip-to-content:hover, .skip-to-contact:hover {
+  background-color: rgb(111, 111, 111);
+  color: white;
+}
