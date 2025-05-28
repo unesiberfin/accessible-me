@@ -1,8 +1,10 @@
 body {
   font-family: 'Roboto', Helvetica, sans-serif;
   background-color: #ffffff;
-  margin: 0;
+  margin: 1em;
   padding: 0;
+  font-size: 1.2em;
+  font-weight: 200;
 }
 
 h1,
@@ -69,3 +71,11 @@ form button {
 .site-footer {
   padding: 2rem 0;
 }
+.skip-to-content-link {
+  left: 50%;
+  position: absolute;
+  transform: translateY(-100%);
+  text-decoration: none;
+}
+
+

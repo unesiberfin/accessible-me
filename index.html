@@ -14,9 +14,10 @@
 
 <body>
   <div class="container">
-    <div class="site-header">
+    <a href="#maincontent">Skip To Content</a>
+    <div class="site-header" role="banner">
       <h1>Jam Box Studios</h1>
-      <div class="main-nav">
+      <div class="main-nav" role="navigation">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Products</a></li>
@@ -27,15 +28,15 @@
       <img src="https://cdn.pixabay.com/photo/2013/05/17/15/54/cat-111793_1280.jpg" class="banner">
     </div>
   </div>
-
-  <div class="main-content">
-    <h1>Welcome to Jam Box</h1>
+ 
+  <div id="main-content" role="main">
+    <h2>Welcome to Jam Box</h2>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
   </div>
 
-  <div class="owner">
-    <h1>Meet the owner</h1>
+  <div class="owner" role="region">
+    <h3>Meet the owner</h3>
     <ul>
       <li>Name: John Doe</li>
       <li>Title: CEO</li>
@@ -44,18 +45,21 @@
     </ul>
   </div>
 
-  <div>
-    <h1>Address</h1>
-      <p>
-        Jambox Studios
-        123 Guitar Road,
-        Musicville, Danceistan
-        B3T 0L0
-      </p>
-  <div>
+  <div id="address-heading" role="region">
+    <h3>Address</h3>
+    <div itemscope itemtype="https://schema.org/PostalAddress">
+        <ul>
+          <li itemprop="name">Jambox Studio</li>
+          <li itemprop="streetAddress"123>Guitar Road,</li>
+          <li itemprop="addressLocality">Musicville,</li>
+          <li itemprop="addressRegion">Danceistan</li>
+          <li itemprop="postalCode">B3T 0L0</li>
+        </ul>
+    </div>
+  </div>
   <div class="contact-section">
     <h1>Contact Us</h1>
-    <form action="thanks.html">
+    <form action="thanks.html" role="form">
       <label>Full Name</label>
       <input type="text" placeholder="Full Name">
       <input type="text" placeholder="Email">
@@ -65,7 +69,7 @@
       <button type="submit">Send</button>
     </form>
   </div>
-
+  <a class="skip-to-content-link" href="#main-content">Skip to content</a>
   <div class="site-footer">
     &copy; 2021 Jam Box Studios
   </div>
