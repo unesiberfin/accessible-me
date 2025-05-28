@@ -87,5 +87,10 @@ form button {
 
 .skip-to-header {
   display: flex;
-  
+  width: fit-content;
+  margin-top: 1em;
+}
+
+.list  {
+  list-style: none;
 }
