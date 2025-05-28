@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Accessible Me</title>
+  <script src="https://kit.fontawesome.com/841d7b8de7.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&family=Stick+No+Bills:wght@300&display=swap" rel="stylesheet">
@@ -15,19 +16,19 @@
 <body>
   <header>
     <div class="container">
-      <a href="#footer" class="skip-to-footer">Skip to footer</a>
-      <a href="#contact-section" class="skip-to-contact">Contact Us</a>
-      <div class="site-header" role="banner">
-        <h1>Jam Box Studios</h1>
+      <a href="#footer" class="skip-to-footer" aria-label="skip to footer">Skip to footer</a>
+      <a href="#contact-section" class="skip-to-contact" aria-label="skip to contact form">Contact Us</a>
+      <div id="site-header" role="banner">
+        <h1 role="heading">Jam Box Studios</h1>
         <div class="main-nav" role="navigation">
-          <ul>
-            <li><a href="#">Home</a></li>
+          <ul role="menu-bar">
+            <li role="menu-item"><a href="#">Home</a></li>
             <li><a href="#">Products</a></li>
             <li><a href="#">Reservation</a></li>
             <li><a href="#">Studio</a></li>
           </ul>
         </div>
-        <img src="https://cdn.pixabay.com/photo/2013/05/17/15/54/cat-111793_1280.jpg" class="banner">
+        <img src="https://cdn.pixabay.com/photo/2013/05/17/15/54/cat-111793_1280.jpg" class="banner" alt="Picture of a kitten">
       </div>
     </div>
   </header>
@@ -63,16 +64,28 @@
     <div id="contact-section">
       <h1>Contact Us</h1>
       <form action="thanks.html" role="form">
+        <div>
         <label>Full Name</label>
         <input type="text" placeholder="Full Name">
+        </div>
+        <div>
+        <label for="email">Email</label>
         <input type="text" placeholder="Email">
+        </div>
+        <div>
+        <label for="subject">Subject</label>
         <input type="text" placeholder="Subject">
-        <b>Your Message</b>
-        <textarea></textarea>
+        </div>
+        <div>
+        <label for="message">Your Message</label>
+        <textarea name="message" placeholder="Tell us what you have"></textarea>
         <button type="submit">Send</button>
+        </div>
       </form>
     </div>
-    <a class="skip-to-content" href="#main-content">Skip to content</a>
+    <div id="top">
+    <a class="skip-to-header" href="#site-header"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
   </main>
 
   <footer id="footer">
